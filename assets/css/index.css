@@ -19,8 +19,54 @@ main {
 
 .encriptador {
     position: relative;
-    border: 1px solid blue;
     width: 80%;
+    display: flex;
+}
+
+.encriptador-contenido {
+    width: 100%;
+}
+
+.encriptador-img {
+    width: 7vw;
+}
+
+.encriptador-contenedor-texto {
+    position: relative;
+    min-height: 76vh;
+}
+
+.encriptador-contenedor-btns {
+    position: relative;
+    min-height: 10vh;
+}
+
+.encriptador-contenedor-btns-texto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+.encriptador-contenedor-btns-texto > img {
+    width: 1vw;
+    margin: 0 .5% 0 0;
+}
+
+.encriptador-contenedor-btns-btns > button {
+    padding: 2% 9%;
+    border-radius: 10px;
+    margin-right: 1%;
+    border: 1px solid #2424d5;
+}
+
+.btn_encriptar {
+    background-color: #2424d5;
+    color: #f7fbfb;
+}
+
+.btn_desencriptar {
+    background-color: #cbcbff;
+    color: #2424d5;
 }
 
 .ladera {
