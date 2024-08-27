@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #eefefe;
+    padding: 5vh 2.5vw;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    min-height: 90vh;
+}
+
+.encriptador {
+    position: relative;
+    border: 1px solid blue;
+    width: 80%;
+}
+
+.ladera {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 20%;
+    background-color: #f7fbfb;
+    border-radius: 15px;
+}
+
+.ladera-contenedor-img {
+    display: flex;
+    justify-content: center;
+}
+
+.img-hombresito {
+    width: 90%;
+}
+
+.ladera-contenedor-texto {
+    padding: 5% 10%;
+    text-align: center;
+}
+
+.ladera-contenedor-texto > h3 {
+    margin-bottom: 5%;
+}
