@@ -22,26 +22,31 @@
               <h6>Solo letras minúsculas y sin acentos.</h6>
             </div>
             <div class="encriptador-contenedor-btns-btns">
-              <button class="btn_encriptar" onclick="encriptar()">Encriptar</button>
-              <button class="btn_desencriptar" onclick="desencriptar()">Desencriptar</button>
+              <button class="btn_encriptar" onclick="encriptar()">Encriptar!</button>
+              <button class="btn_desencriptar" onclick="desencriptar()">Desencriptar!</button>
             </div>
           </div>
         </div>
       </div>
       <div class="ladera">
-        <div class="contenedor-texto-desencriptado">
-          <h2 id="texto-desencriptado"></h2>
+        <div class="contenedor-texto-desencriptado" id="contenedor-texto-desencriptado" hidden>
+          <h3 id="texto-desencriptado"></h3>
         </div>
         <div class="ladera-contenedor-img" id="ladera-contenedor-img">
           <img src="./assets/images/Muñeco.png" alt="" class="img-hombresito" id="img-hombresito">
         </div>
         <div class="ladera-contenedor-texto" id="ladera-contenedor-texto">
-          <h3>Ningún mensaje fue encontrado</h3>
+          <h3>Ningún mensaje fué encontrado</h3>
           <h5>Ingresa el texto que desees encriptar o desencriptar.</h5>
         </div>
-        <button id="btn-copiar" onclick="copiar()">Copiar</button>
+        <button id="btn-copiar" onclick="copiar()" hidden>Copiar!</button>
       </div>
     </main>
+    <footer>
+      <p>Desarrollado por Melissa Lopez Diaz &copy; <span id="year"></span>2024</p>
+      <a href="https://github.com/Mlopdi"><img class="footer-image" src="./assets/images/github.png" alt="Logo de Github"></a>
+      <a href="https://www.linkedin.com/in/melissa-lopez-diaz/"><img class="footer-image" src="./assets/images/linkedin.png" alt="Logo de linkedIn"></a>
+    </footer>
   </body>
   <script src="./assets/js/index.js"></script>
 </html>
