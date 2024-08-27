@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador App</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./assets/css/index.css">
+  </head>
+  <body>
+    <main>
+      <div class="encriptador">
+        <div class="encriptador-header">
+          <img src="./assets/images/Logo.png" alt="" class="encriptador-img">
+        </div>
+        <div class="encriptador-contenido">
+          <div class="encriptador-contenedor-texto">
+            <textarea name="input-area" id="input-area" placeholder="Ingrese el texto aquí"></textarea>
+          </div>
+          <div class="encriptador-contenedor-btns">
+            <div class="encriptador-contenedor-btns-texto">
+              <img src="./assets/images/bi_exclamation-circle-fill.png" alt="">
+              <h6>Solo letras minúsculas y sin acentos.</h6>
+            </div>
+            <div class="encriptador-contenedor-btns-btns">
+              <button class="btn_encriptar" onclick="encriptar()">Encriptar</button>
+              <button class="btn_desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ladera">
+        <div class="contenedor-texto-desencriptado">
+          <h2 id="texto-desencriptado"></h2>
+        </div>
+        <div class="ladera-contenedor-img" id="ladera-contenedor-img">
+          <img src="./assets/images/Muñeco.png" alt="" class="img-hombresito" id="img-hombresito">
+        </div>
+        <div class="ladera-contenedor-texto" id="ladera-contenedor-texto">
+          <h3>Ningún mensaje fue encontrado</h3>
+          <h5>Ingresa el texto que desees encriptar o desencriptar.</h5>
+        </div>
+        <button id="btn-copiar" onclick="copiar()">Copiar</button>
+      </div>
+    </main>
+  </body>
+  <script src="./assets/js/index.js"></script>
 </html>
