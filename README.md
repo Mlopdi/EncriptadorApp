@@ -45,10 +45,7 @@ La aplicación encripta textos permitiendo intercambiar mensajes secretos con ot
 
 <h2>Tecnologías Utilizadas</h2>
 
-HTML5 
-CSS3
-JavaScript
-Git y GitHub
+HTML5, CSS3, JavaScript, Git y GitHub
 
 <h2>Autor</h2>
 Desarrollado por Melissa Lopez Diaz.
