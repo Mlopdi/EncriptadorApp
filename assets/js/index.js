@@ -38,7 +38,11 @@ function copiar() {
 function ocultarMuneco() {
     let img = document.getElementById("img-hombresito");
     let txt = document.getElementById("ladera-contenedor-texto");
+    let txtDecriptado = document.getElementById("contenedor-texto-desencriptado");
+    let btn = document.getElementById("btn-copiar");
 
+    txtDecriptado.removeAttribute("hidden");
+    btn.removeAttribute("hidden");
     img.setAttribute("hidden", true);
     txt.setAttribute("hidden", true);
 }
@@ -47,7 +51,11 @@ function mostrarMuneco() {
     escribir("")
     let img = document.getElementById("img-hombresito");
     let txt = document.getElementById("ladera-contenedor-texto");
+    let txtDecriptado = document.getElementById("contenedor-texto-desencriptado");
+    let btn = document.getElementById("btn-copiar");
 
+    txtDecriptado.setAttribute("hidden", true);
+    btn.setAttribute("hidden", true);
     img.removeAttribute("hidden");
     txt.removeAttribute("hidden");
 }

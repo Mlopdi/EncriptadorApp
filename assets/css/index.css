@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,14 +9,14 @@
 body {
     min-height: 100vh;
     min-width: 100vw;
-    background-color: #eefefe;
-    padding: 5vh 2.5vw;
+    background-color: #cefbfb;
+    padding: 5vh 5vw 4vh 5vw;
 }
 
 main {
     display: flex;
     width: 100%;
-    min-height: 90vh;
+    min-height: 86vh;
 }
 
 .encriptador {
@@ -29,12 +31,13 @@ main {
 }
 
 .encriptador-img {
-    width: 7vw;
+    width: 8vw;
+    margin-left: 10px;
 }
 
 .encriptador-contenedor-texto {
     position: relative;
-    min-height: 76vh;
+    min-height: 71vh;
     padding-top: 10%;
 }
 
@@ -42,11 +45,20 @@ main {
     width: 70%;
     min-height: 30vh;
     padding: 2%;
+    border: none;
+    background-color: #cefbfb;
+    font-family: "Roboto Mono", monospace;
+    font-size: larger;
+    color: #04044f;
 }
 
 .encriptador-contenedor-btns {
     position: relative;
     min-height: 10vh;
+    font-family: "Roboto Mono", monospace;
+    font-style: normal;
+    font-weight: 600;
+    color: rgba(81, 81, 81, 0.662);
 }
 
 .encriptador-contenedor-btns-texto {
@@ -65,26 +77,53 @@ button {
     border-radius: 10px;
     margin-right: 1%;
     border: 1px solid #2424d5;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover, #btn-copiar:hover {
+    transform: translateY(-1px);
+    box-shadow: 0px 5px 4px rgba(88, 164, 178, 0.391)(0, 0, 0, 0.1);
+    background-color: #3edef375;
 }
 
 .btn_encriptar {
-    background-color: #2424d5;
+    background-color: #04044f;
     color: #f7fbfb;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    border: 1px solid #273fba;
+}
+
+.btn_encriptar:hover {
+    color: #04044f;
 }
 
 .btn_desencriptar {
     background-color: #cbcbff;
-    color: #2424d5;
+    color: #04044f;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    border: 1px solid #273fba;
 }
 
 .ladera {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     position: relative;
     width: 20%;
     background-color: #f7fbfb;
-    border-radius: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px gray; 
+    transition: box-shadow 0.2s ease;
+}
+
+.ladera:hover {
+    box-shadow: 0px 0px 15px rgb(88, 164, 178);
 }
 
 .ladera-contenedor-img {
@@ -99,19 +138,219 @@ button {
 .ladera-contenedor-texto {
     padding: 5% 10%;
     text-align: center;
+    font-family: "Roboto Mono", monospace;
+    font-size: large;
+    color: #04044f;
 }
 
 .ladera-contenedor-texto > h3 {
     margin-bottom: 5%;
 }
 
+.ladera-contenedor-texto > h5 {
+    /* color: #04044fb6; */
+    color: rgba(81, 81, 81, 0.662);
+    font-weight: 400;
+    font-size: small;
+}
+
 #btn-copiar {
     position: relative;
-    bottom: -15%;
-    padding: 5% 9%;
+    bottom: -25%;
+    padding: 6.5% 9%;
     width: 90%;
     margin-right: 0;
-    align-self: center;
-    background-color: #2424d5;
-    color: #f7fbfb;
+    background-color: #cbcbff;
+    color: #04044f;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    border: 1px solid #273fba;
+}
+
+.contenedor-texto-desencriptado {
+    position: relative;
+    top: -25%;
+    min-height: 30vh;
+    max-height: 30vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10%;
+    overflow-wrap: break-word;
+    font-family: "Roboto Mono", monospace;
+    font-size: medium;
+    color: #04044f;
+}
+
+footer {
+    position: absolute;
+    padding: 1% 0;
+    width: 100%;
+    background-color: #04044f;
+    color: #f7fbfba3;
+    bottom: 0%;
+    left: 0%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: smaller;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > a {
+    margin-left: 1%;
+}
+
+.footer-image {
+    width: 14px;
+}
+
+/* Media Queries para Tablets (max-width: 800px) */
+@media (max-width: 821px) {
+    
+    main {
+        flex-direction: column;
+    }
+
+    .encriptador-contenedor-texto {
+        left: -20%;
+        min-height: 65vh;
+        width: 40rem;
+    }
+
+    .encriptador-contenedor-btns-btns {
+        display: flex;
+        justify-content: center;
+    }
+
+    .encriptador-contenedor-btns-texto {
+        margin-bottom: 2%;
+        position: relative;
+        left: -20%;
+    }
+
+    #input-area {
+        width: 57rem;
+    }
+
+    button {
+        padding: 6% 30%;
+        margin-left: 4%;
+        border-radius: 25px;
+    }
+
+    .ladera {
+        margin-top: 5%;
+        width: 100%;
+        border-radius: 25px;
+        margin-bottom: 5%;
+    }
+
+    .img-hombresito {
+        display: none;
+    }
+
+    #btn-copiar {
+        padding: 4% 10%;
+        margin-bottom: 5%;
+        margin-left: 0;
+    }
+
+    footer {
+        bottom: unset;
+    }
+}
+
+/* Media Queries para Celulares (max-width: 480px) */
+@media (max-width: 431px) {
+
+    .encriptador {
+        flex-direction: column;
+    }
+
+    .encriptador-img {
+        width: 100px;
+        margin-left: 0;
+    }
+
+    .encriptador-contenedor-texto {
+        left: -11%;
+        min-height: 30vh;
+        width: 35rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    #input-area {
+        width: 30rem;
+    }
+
+    .encriptador-contenedor-btns-texto {
+        left: 0%;
+    }
+
+    .encriptador-contenedor-btns {
+        width: 30rem;
+    }
+
+    .encriptador-contenedor-btns-btns {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    button {
+        padding: 8% 30%;
+        margin-left: 0%;
+        margin-top: 7%;
+        border-radius: 25px;
+    }
+
+    .ladera {
+        margin-top: 20%;
+        min-height: 20vh;
+    }
+
+    footer {
+        min-height: 4vh;
+    }
+}
+
+/* Media Queries para Celulares (max-width: 380px) */
+@media (max-width: 380px) {
+
+    button {
+        padding: 8% 5%;
+        margin-top: 2.5%;
+    }
+
+    .ladera {
+        margin-top: 10%;
+    }
+
+    .encriptador-contenedor-texto {
+        left: -30%;
+    }
+
+    #input-area {
+        width: 25rem;
+    }
+
+    .encriptador-contenedor-btns-texto {
+        margin: 0;
+    }
+
+    .encriptador-contenedor-btns {
+        width: 26rem;
+    }
+
+    .encriptador-contenedor-btns-btns {
+        margin-top: 0;
+    }
+
+    #btn-copiar {
+        padding: 7% 10%;
+    }
+
 }
