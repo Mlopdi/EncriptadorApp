@@ -206,3 +206,151 @@ footer > a {
 .footer-image {
     width: 14px;
 }
+
+/* Media Queries para Tablets (max-width: 800px) */
+@media (max-width: 821px) {
+    
+    main {
+        flex-direction: column;
+    }
+
+    .encriptador-contenedor-texto {
+        left: -20%;
+        min-height: 65vh;
+        width: 40rem;
+    }
+
+    .encriptador-contenedor-btns-btns {
+        display: flex;
+        justify-content: center;
+    }
+
+    .encriptador-contenedor-btns-texto {
+        margin-bottom: 2%;
+        position: relative;
+        left: -20%;
+    }
+
+    #input-area {
+        width: 57rem;
+    }
+
+    button {
+        padding: 6% 30%;
+        margin-left: 4%;
+        border-radius: 25px;
+    }
+
+    .ladera {
+        margin-top: 5%;
+        width: 100%;
+        border-radius: 25px;
+        margin-bottom: 5%;
+    }
+
+    .img-hombresito {
+        display: none;
+    }
+
+    #btn-copiar {
+        padding: 4% 10%;
+        margin-bottom: 5%;
+        margin-left: 0;
+    }
+
+    footer {
+        bottom: unset;
+    }
+}
+
+/* Media Queries para Celulares (max-width: 480px) */
+@media (max-width: 431px) {
+
+    .encriptador {
+        flex-direction: column;
+    }
+
+    .encriptador-img {
+        width: 100px;
+        margin-left: 0;
+    }
+
+    .encriptador-contenedor-texto {
+        left: -11%;
+        min-height: 30vh;
+        width: 35rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    #input-area {
+        width: 30rem;
+    }
+
+    .encriptador-contenedor-btns-texto {
+        left: 0%;
+    }
+
+    .encriptador-contenedor-btns {
+        width: 30rem;
+    }
+
+    .encriptador-contenedor-btns-btns {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    button {
+        padding: 8% 30%;
+        margin-left: 0%;
+        margin-top: 7%;
+        border-radius: 25px;
+    }
+
+    .ladera {
+        margin-top: 20%;
+        min-height: 20vh;
+    }
+
+    footer {
+        min-height: 4vh;
+    }
+}
+
+/* Media Queries para Celulares (max-width: 380px) */
+@media (max-width: 380px) {
+
+    button {
+        padding: 8% 5%;
+        margin-top: 2.5%;
+    }
+
+    .ladera {
+        margin-top: 10%;
+    }
+
+    .encriptador-contenedor-texto {
+        left: -30%;
+    }
+
+    #input-area {
+        width: 25rem;
+    }
+
+    .encriptador-contenedor-btns-texto {
+        margin: 0;
+    }
+
+    .encriptador-contenedor-btns {
+        width: 26rem;
+    }
+
+    .encriptador-contenedor-btns-btns {
+        margin-top: 0;
+    }
+
+    #btn-copiar {
+        padding: 7% 10%;
+    }
+
+}
